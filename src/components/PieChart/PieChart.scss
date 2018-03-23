@@ -1,0 +1,24 @@
+.wrap {
+  margin: 40px auto;
+  display: block;
+}
+.arc {
+  text {
+    font: 12px Helvetica, sans-serif;
+    text-anchor: middle;
+    fill: #ffffff;
+  }
+  path {
+    transition: all 0.1s linear;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    position: relative;
+    margin: 2px;
+    &:hover {
+      opacity: 0.9;
+      transform: translate(10px, -10px);
+      z-index: 100;
+      stroke-width: 0;
+    }
+  }
+}
