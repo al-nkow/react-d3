@@ -4,7 +4,7 @@ const Arc = (props) => {
 
     const { width, height, arcClass, label, pie, path } = props;
 
-    return (git
+    return (
         <g transform={`translate(${width/2},${height/2})`}>
             {pie.map((d, i) => (<g className={arcClass} key={i}>
                 <path d={path(d)} fill={d.data.color}> </path>
