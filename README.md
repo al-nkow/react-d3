@@ -1,3 +1,33 @@
+
+## Run
+```
+1. npm i
+2. npm start
+3. open http://localhost:3000/
+```
+
+## Simple coding challenge
+Build ‘dumb’ component that will render pie chart.
+This component will take three properties:
+1. title:string
+2. data:array
+3. dimensions:{width:number,height:number}
+
+Build HOC component that will generate random data and pass it to pie chart
+component through props.
+HOC shouldr e-generate data every 2 seconds and update pie chart component.
+
+Requirements:
+1. Use create-react-app for this coding challenge
+2. Use d3.js library for pie chart
+3. Code must be written using ES6 standard
+4. Big plus if you use d3.js to do the math and React to do all rendering.
+
+Also show us how you can break things up in to small functional components.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

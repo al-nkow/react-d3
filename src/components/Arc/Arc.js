@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Arc = (props) => {
 
@@ -13,6 +14,15 @@ const Arc = (props) => {
         </g>
     )
 
+};
+
+Arc.propTypes = {
+    width: PropTypes.number,
+    height: PropTypes.number,
+    arcClass: PropTypes.string,
+    label: PropTypes.func,
+    pie: PropTypes.array,
+    path: PropTypes.func
 };
 
 export default Arc;

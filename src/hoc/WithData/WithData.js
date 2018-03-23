@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const DataGen = (WrappedComponent) => {
+const WithData = (WrappedComponent) => {
     return class extends Component {
 
         colors = ['#c07b7b', '#59ac7c', '#0b5a8a', '#c67151', '#205153', '#76a0a5', '#e56463', '#dec0bc', '#e19c3b', '#666567', '#dbf5cf'];
@@ -57,4 +57,4 @@ const DataGen = (WrappedComponent) => {
     }
 };
 
-export default DataGen;
+export default WithData;

@@ -1,8 +1,9 @@
 import React from 'react';
 import classes from './PieChart.scss';
 import * as d3 from 'd3';
-import DataGen from '../../hoc/DataGen/DataGen';
+import WithData from '../../hoc/WithData/WithData';
 import Arc from '../Arc/Arc';
+import PropTypes from 'prop-types';
 
 const PieChart = (props) => {
 
@@ -21,4 +22,10 @@ const PieChart = (props) => {
 
 };
 
-export default DataGen(PieChart);
+PieChart.propTypes = {
+    width: PropTypes.number,
+    height: PropTypes.number,
+    data: PropTypes.array
+};
+
+export default WithData(PieChart);
